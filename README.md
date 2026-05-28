@@ -6,7 +6,9 @@
 
 把这句话发给你的 AI Agent：
 
-> 帮我安装公众号封面生成技能。克隆 `https://github.com/joeytoday/open1v-mpcover-gen.git` 到 `~/.agents/skills/open1v-mpcover-gen`，然后进入目录执行 `npm install`。
+```
+帮我安装这个技能：https://github.com/joeytoday/open1v-mpcover-gen
+```
 
 或手动：
 
