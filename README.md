@@ -24,6 +24,9 @@ cd ~/.agents/skills/open1v-mpcover-gen && npm install
 | 03 极简抽象 | "很清晰" | 纯色底+左文字+右图标 | 技术博客、产品更新 |
 | 04 像素风 | "有趣" | 全幅背景+左遮罩 | 游戏、趣味技术、怀旧 |
 
+<img width="2836" height="1598" alt="image" src="https://github.com/user-attachments/assets/29d1a2e7-6b74-44fb-ae10-06e94caa0063" />
+
+
 ## 使用
 
 对 Agent 说：
