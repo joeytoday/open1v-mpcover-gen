@@ -3,9 +3,9 @@ name: open1v-mpcover-gen
 description: 生成特定风格的公众号封面图。支持4种风格：大字报、杂志、Claude极简、像素。通过百炼CLI调用AI生图。触发词：公众号封面、封面生成、cover、生成封面、做个封面。
 author: joeytoday
 author_url: https://github.com/joeytoday
-version: 5.5
+version: 5.6
 created: 2026-05-28 10:39
-updated: 2026-05-28 16:41
+updated: 2026-05-28 16:56
 published: true
 ---
 
@@ -184,19 +184,19 @@ Absolutely no text, no writing, no letters anywhere in the image.
 
 #### 03 极简抽象 — 提示词骨架
 
-03 的图片会**铺满整个画布**，上面叠彩色遮罩。所以生图需要全幅构图，主体偏右，整体色调与配色表对应色系协调。
+03 的图片会**铺满整个画布**，上面叠彩色遮罩。**必须用 `--size '1344*572'` 生成 2.35:1 宽幅图**（不要用正方形，否则铺满时主体会被裁切变形）。主体偏右，整体色调与配色表对应色系协调。
 
 ```
-Elegant illustration (2.35:1 ultra-wide), [手绘/水彩/线描/几何] style.
-[概念隐喻场景描述], positioned in the RIGHT 55-70% of frame.
-Left 35% remains simpler or faded — reserved for text overlay with color mask.
-Muted [色系名] color palette harmonizing with [配色hex], soft and cohesive.
-Artistic texture: watercolor wash / ink sketch / paper grain / subtle noise.
-Clean composition, generous negative space, editorial illustration quality.
+Elegant illustration (2.35:1 ultra-wide banner), [手绘/水彩/线描/几何] style.
+[概念隐喻/图标/场景描述], positioned in the RIGHT 60-75% of frame, sized proportionally (not too large, not too small).
+Left 35% remains clean with only subtle texture — reserved for text overlay with color mask.
+Solid muted [色系名] background filling entire canvas, harmonizing with [配色hex].
+Artistic texture across full canvas: paper grain / watercolor wash / subtle noise.
+Clean composition, the illustration element feels like a refined editorial decoration.
 Absolutely no text, no writing, no letters anywhere in the image.
 ```
 
-生图目标：全幅插画铺满画布，主体偏右，整体色调柔和。HTML 会叠加同色系彩色遮罩，左侧文字区100%可读。
+生图目标：2.35:1 宽幅插画，主体偏右且大小适中，左侧留净给遮罩文字。同色系底色铺满整个画布，纹理统一。
 
 #### 04 像素风 — 提示词骨架
 
